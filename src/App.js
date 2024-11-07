@@ -34,10 +34,9 @@ function App() {
   };
 
   return (
-    <div className='header field'>
-      VAT CALCULATOR
-    <div className='header field'>
-      VAT CALCULATOR
+      <div className='header field'>
+      <h1>VAT CALCULATOR</h1>
+      <h2>Additional Header Text</h2>
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
         <PriceEntryField customstyle="field" label="Price excl VAT: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
